@@ -12,11 +12,15 @@
                 margin-bottom: 0px;
             }
 
+            .flex-container{
+                display: flex;
+                flex-direction: row;
+            }
+
             .navigationBarBackground{
                 background-color: rgba(76, 76, 214, 0.494);
                 inline-size: 50%;
                 block-size:100px ;
-                margin-top: 0px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -48,21 +52,35 @@
 
             }
 
+            .saludo{
+                background-color: pink;
+                inline-size: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
         </style>
         <script></script>
 
     </head>
     <body> 
         <div class="cofeeNameBackground"><h2 class="coffeName">La 3 Oriente</h2></div>
-        <div class="navigationBarBackground">
-        <ul class="navigationBar" > 
-            <li> Alimentos</li>
-            <li> Bebidas</li>
-        </ul>
+        <div class="flex-container">
+            <div class="navigationBarBackground">
+                <ul class="navigationBar" > 
+                    <li> Alimentos</li>
+                    <li> Bebidas</li>
+                </ul>
+            </div>
+            <div class="saludo">
+                 <h2>Buenos dias a todos!</h2>
+            </div>
         </div>
 
         <div class="logoDiv">
-            <img src=""
+            
         </div>
         <p id="couple"></p>
         <script> 
