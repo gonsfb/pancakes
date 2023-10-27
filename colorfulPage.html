@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head> 
+        <title>3 Oriente </title>
+        <meta name="keywords" content="Cafe, Puebla, Centro">
+        <meta name="author" content="Gonzalo Flores">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="charset" content="UTF-8">
         <style>
             .cofeeNameBackground{
                 background-color: rgba(50, 133, 50, 0.583);
@@ -10,6 +15,7 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 0px;
+                border-bottom: solid;
             }
 
             .flex-container{
@@ -24,19 +30,37 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border-right: solid;
 
             }
+            .logoDiv {
+                inline-size: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
 
-            ul {
+            div.objetivos {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul.navigationBar {
                 list-style-type: none;
                 margin:0;
                 padding: 0;
-                border:solid;
+                border:solid .05px;
                 overflow: hidden;
                 background-color: rgb(227, 182, 75);
             }
 
-            li{
+            ul.objetivos{
+                list-style-type: none;
+            }
+
+            li.navigationBar{
                 float: left;
                 margin-left: 10px;
                 border: solid;
@@ -47,8 +71,14 @@
                 
             }
 
-            li:hover{
+            li.objetivos {
+                list-style-type: none;
+                justify-content: center;
+            }
+
+            li.navigationBar:hover{
                 background-color: red;
+                cur
 
             }
 
@@ -60,6 +90,11 @@
                 justify-content: center;
 
             }
+            
+            a {
+                text-decoration: none;
+                color:black
+            }
 
         </style>
         <script></script>
@@ -70,26 +105,33 @@
         <div class="flex-container">
             <div class="navigationBarBackground">
                 <ul class="navigationBar" > 
-                    <li> Alimentos</li>
-                    <li> Bebidas</li>
+                    <li class="navigationBar"><a href="alimentos.html">Alimentos</a> </li>
+                    <li class="navigationBar"> Bebidas</li>
                 </ul>
             </div>
             <div class="saludo">
-                 <h2>Buenos dias a todos!</h2>
+                 <h3>Buenos dias a todos!</h3>
             </div>
         </div>
 
         <div class="logoDiv">
-            
+            <img src="logo.png">
+        </div>
+        <div class="objetivos">
+            <p> Todos nuestro platillos se preparan al momento con ingredientes frescos, por lo que cada platillo puede demorar entre cinco a quince minutos para servirse.
+                <br>Recuerda que nuestros objetivos son dos: 
+                <ul class="objetivos">
+                    <li class="objetivos"> 1- alimentarte </li>
+                    <li class="objetivos">2 Que nos visites nuevamente</li>
+                </ul>
+                <p> De manera que cualquier comentario es bien recibido, solo acercate a nuestro personal.</p>
+            </p>
         </div>
         <p id="couple"></p>
         <script> 
-        let a , b, c ;
-        a = "gonzalo";
-        b = "and";
-        c = "court";
-        document.getElemybyId("couple").innerHTML = a + b + c
+        
         </script>
+
         <p></p>
 
     </body>
